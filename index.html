@@ -1,0 +1,281 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ankita Kundu — Digital Marketing Executive & SEO Analyst</title>
+<meta name="description" content="Ankita Kundu — Digital Marketing Executive & SEO Analyst. I help brands grow organically with data-driven SEO and digital strategies." />
+<meta name="keywords" content="Ankita Kundu, SEO Analyst, Digital Marketing, On Page SEO, Off Page SEO, Technical SEO, Local SEO, GMB Listings, WordPress, Link Building" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1:#04122b; /* deep navy */
+    --bg2:#0b3d91; /* royal blue */
+    --bg3:#3b0f6f; /* deep violet */
+    --white: #ffffff;
+    --muted:#d1d5db;
+    --accent-teal: #0fb6a8;
+    --accent-gold: #f0b429;
+    --navy:#072b56;
+    --content-width:1100px;
+    --gap:40px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif}
+  html,body{height:100%}
+  body{
+    background: linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+    color:var(--white);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.6;
+    font-size:18px;
+    scroll-behavior:smooth;
+  }
+
+  .wrap{max-width:var(--content-width);margin:0 auto;padding:36px 22px}
+
+  /* Header */
+  header.hero{display:flex;gap:32px;align-items:flex-start;padding:28px 0 6px}
+  .hero-left{flex:1;color:var(--white);}
+  .hero-left h1{font-size:2.4rem;color:var(--white);margin-bottom:6px;font-weight:700}
+  .hero-left h2{font-size:1.05rem;color:var(--muted);font-weight:600;margin-bottom:12px}
+  .tagline{color:var(--muted);font-size:1.05rem;margin-bottom:18px;max-width:760px}
+
+  /* Buttons */
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.98rem;border:2px solid transparent;transition:all .18s ease}
+  .btn-navy{background:var(--navy);color:var(--white);border-color:rgba(255,255,255,0.06);box-shadow:0 8px 26px rgba(2,6,23,0.3)}
+  .btn-navy:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(2,6,23,0.45)}
+  .btn-light{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,0.12)}
+  .btn-light:hover{transform:translateY(-3px);border-color:rgba(255,255,255,0.28)}
+
+  /* profile card */
+  .profile{width:320px;flex:0 0 320px;background:rgba(255,255,255,0.04);border-radius:12px;padding:18px;box-shadow:0 12px 40px rgba(2,6,23,0.35);color:var(--white)}
+  .avatar{width:110px;height:110px;border-radius:999px;overflow:hidden;margin-bottom:12px;border:3px solid rgba(255,255,255,0.06);box-shadow:0 8px 20px rgba(0,0,0,0.5)}
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  .profile h3{margin:0;font-size:1.12rem;color:var(--white);font-weight:700}
+  .profile p{margin-top:8px;color:var(--muted);font-size:0.95rem}
+  .profile a.link{display:inline-block;margin-top:12px;color:var(--accent-teal);text-decoration:none;font-weight:600}
+
+  /* Sections */
+  section{padding:calc(var(--gap) - 12px) 0}
+  .inner{background:rgba(255,255,255,0.04);backdrop-filter: blur(6px);padding:20px;border-radius:10px;box-shadow:0 8px 30px rgba(2,6,23,0.25)}
+  section h3{font-size:1.4rem;color:var(--white);margin-bottom:12px;font-weight:700}
+  section p.lead{color:var(--muted);font-size:1rem;margin-bottom:10px}
+
+  /* Skills */
+  .skills{display:flex;flex-wrap:wrap;gap:12px}
+  .skill{background:rgba(255,255,255,0.04);padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);font-weight:600;color:var(--white)}
+
+  /* Experience */
+  .exp-list{display:grid;gap:12px}
+  .exp-item{background:rgba(255,255,255,0.03);padding:14px;border-radius:8px;border-left:4px solid var(--accent-gold);color:var(--white)}
+
+  /* Projects - bright tabs */
+  .projects-grid{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+  .proj{
+    flex:1 1 calc(33% - 14px);
+    min-width:220px;
+    padding:14px;border-radius:10px;color:var(--white);
+    transition:transform .22s ease, box-shadow .22s ease;
+    display:flex;flex-direction:column;gap:8px;border:1px solid rgba(255,255,255,0.06);
+  }
+  .proj .title{font-weight:700;font-size:1rem}
+  .proj .url{font-size:0.92rem;color:rgba(255,255,255,0.92);text-decoration:none}
+  .proj:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(0,0,0,0.5)}
+
+  /* Bright project colors (deep and vibrant) */
+  .p1{background:linear-gradient(180deg,#065f46,#047857)} /* emerald deep */
+  .p2{background:linear-gradient(180deg,#9a3412,#ef4444)} /* deep coral/red */
+  .p3{background:linear-gradient(180deg,#2b21a9,#5b21b6)} /* royal purple */
+  .p4{background:linear-gradient(180deg,#0ea5a4,#0891b2)} /* teal/cyan */
+  .p5{background:linear-gradient(180deg,#b45309,#f59e0b)} /* rich gold */
+  .p6{background:linear-gradient(180deg,#075985,#0ea5e9)} /* sapphire blue */
+  .p7{background:linear-gradient(180deg,#7c3aed,#4c1d95)} /* vivid violet */
+  .p8{background:linear-gradient(180deg,#0f766e,#2dd4bf)} /* mint-teal */
+  .p9{background:linear-gradient(180deg,#b91c1c,#ef4444)} /* vivid red */
+
+  /* Contact */
+  .contact-grid{display:flex;gap:22px;align-items:flex-start}
+  .contact-info{flex:0 0 360px;background:rgba(255,255,255,0.03);padding:16px;border-radius:8px;color:var(--white)}
+  form.contact-form{flex:1;display:flex;flex-direction:column;gap:12px}
+  input,textarea{padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);font-size:1rem;background:rgba(0,0,0,0.25);color:var(--white)}
+  input::placeholder, textarea::placeholder{color:rgba(255,255,255,0.6)}
+  button.send{background:var(--navy);color:var(--white);border:none;padding:12px 18px;border-radius:8px;font-weight:700;cursor:pointer}
+  button.send:hover{filter:brightness(.95);transform:translateY(-3px)}
+
+  footer{padding:22px;text-align:center;color:var(--muted);font-size:0.95rem}
+
+  #topBtn{position:fixed;right:18px;bottom:18px;background:var(--navy);color:#fff;border:none;padding:10px 12px;border-radius:8px;display:none;cursor:pointer;box-shadow:0 8px 26px rgba(2,6,23,0.4)}
+
+  /* Responsive */
+  @media (max-width:1000px){
+    .proj{flex:1 1 calc(48% - 14px)}
+    .profile{width:260px;flex:0 0 260px}
+  }
+  @media (max-width:720px){
+    header.hero{flex-direction:column;align-items:flex-start}
+    .profile{width:100%}
+    .contact-grid{flex-direction:column}
+    .proj{flex:1 1 100%}
+    .wrap{padding:20px}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero" id="home" role="banner" aria-label="Hero">
+      <div class="hero-left">
+        <h1>Ankita Kundu</h1>
+        <h2>Digital Marketing Executive & SEO Analyst</h2>
+        <p class="tagline">I help brands grow organically with data-driven SEO and digital strategies.</p>
+        <div class="cta-row" role="group" aria-label="Hero CTAs">
+          <a class="btn btn-navy" href="https://drive.google.com/file/d/1k5J7sCg0q0VQoGc3YtdaAOmzcW8s-Mv2/view?usp=sharing" target="_blank" rel="noopener">📄 Download Resume</a>
+          <a class="btn btn-light" href="#contact">💼 Hire Me</a>
+          <a class="btn btn-light" href="https://www.linkedin.com/in/ankita-kundu-seo-digital-marketing" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        </div>
+      </div>
+
+      <aside class="profile" aria-label="Profile card">
+        <div class="avatar"><img src="https://raw.githubusercontent.com/kunduankita2017-beep/Portfolio/refs/heads/main/ANKITA%20KUNDU%20(1).jpg" alt="Ankita Kundu"></div>
+        <h3>Ankita Kundu</h3>
+        <p>Digital Marketing Executive & SEO Analyst</p>
+        <p style="margin-top:8px;font-size:0.95rem;color:var(--muted)">kundu.ankita2017@gmail.com</p>
+        <a class="link" href="https://www.linkedin.com/in/ankita-kundu-seo-digital-marketing" target="_blank" rel="noopener">View LinkedIn →</a>
+      </aside>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="inner">
+        <h3 id="about-heading" style="color:var(--accent-teal)">About</h3>
+        <p class="lead">I help brands grow organically with data-driven SEO and digital strategies. With experience across off-page and local SEO, content optimization, and social campaigns, I focus on measurable growth and sustainable visibility.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="inner">
+        <h3 id="skills-heading" style="color:var(--accent-gold)">Skills</h3>
+        <div class="skills" role="list">
+          <div class="skill" role="listitem">On Page SEO</div>
+          <div class="skill" role="listitem">Off Page SEO</div>
+          <div class="skill" role="listitem">Technical SEO</div>
+          <div class="skill" role="listitem">Canva</div>
+          <div class="skill" role="listitem">WordPress</div>
+          <div class="skill" role="listitem">Link Building</div>
+          <div class="skill" role="listitem">Local SEO</div>
+          <div class="skill" role="listitem">GMB Listings</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="exp-heading">
+      <div class="inner">
+        <h3 id="exp-heading" style="color:var(--accent-teal)">Experience</h3>
+        <div class="exp-list">
+          <div class="exp-item">Executed off-page SEO strategies such as backlinking, social bookmarking, and Web 2.0 submissions, achieving a 10% increase in organic traffic over 6 months.</div>
+          <div class="exp-item">Optimized local SEO and GMB listings, leading to a 20% improvement in local search visibility and a 10% growth in lead generation.</div>
+          <div class="exp-item">Managed social media marketing campaigns, creating and scheduling content calendars, and driving a 10–20% growth in follower base within 6 months.</div>
+          <div class="exp-item">Crafted compelling meta titles and descriptions, boosting CTRs by 5% on targeted landing pages.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="inner">
+        <h3 id="projects-heading" style="color:var(--accent-gold)">Projects</h3>
+        <div class="projects-grid" role="list">
+          <div class="proj p1"><div class="title">Paperplane Store</div><a class="url" href="https://thepaperplanestore.com/" target="_blank" rel="noopener">thepaperplanestore.com</a><div>Off-Page SEO and Local Listings.</div></div>
+          <div class="proj p2"><div class="title">Pre Drinks Bar</div><a class="url" href="https://predrinksbar.com.au/" target="_blank" rel="noopener">predrinksbar.com.au</a><div>Off-Page SEO, Local SEO, GMB Listings, and Keyword Research.</div></div>
+          <div class="proj p3"><div class="title">Gold Coast Artificial Grass Supplies</div><a class="url" href="https://goldcoastartificialgrass.com/" target="_blank" rel="noopener">goldcoastartificialgrass.com</a><div>Off-Page SEO and Local Listings.</div></div>
+          <div class="proj p4"><div class="title">Nabble Casino Bingo</div><a class="url" href="https://www.nabblecasinobingo.com/" target="_blank" rel="noopener">nabblecasinobingo.com</a><div>Off-Page SEO and Local Listings.</div></div>
+          <div class="proj p5"><div class="title">JTS Innovations</div><a class="url" href="https://jtsinnovations.com.au/" target="_blank" rel="noopener">jtsinnovations.com.au</a><div>Off-Page SEO and Local Listings.</div></div>
+          <div class="proj p6"><div class="title">Joli Best View Cafe</div><a class="url" href="https://jolibestviewcafe.com/" target="_blank" rel="noopener">jolibestviewcafe.com</a><div>Off-Page SEO and Local Listings.</div></div>
+          <div class="proj p7"><div class="title">Happier At Home</div><a class="url" href="https://happierathome.com/" target="_blank" rel="noopener">happierathome.com</a><div>SEO Audit, On-Page, Off-Page, Local SEO.</div></div>
+          <div class="proj p8"><div class="title">Interract Jewellery</div><a class="url" href="https://www.interacctjewellery.co.uk/" target="_blank" rel="noopener">interacctjewellery.co.uk</a><div>SEO Audit, On-Page, Off-Page, Local SEO.</div></div>
+          <div class="proj p9"><div class="title">Hamilton Container Services</div><a class="url" href="https://hamiltoncontainer.com/" target="_blank" rel="noopener">hamiltoncontainer.com</a><div>SEO Audit, On-Page, Off-Page, Local SEO.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="inner">
+        <h3 id="contact-heading" style="color:var(--accent-teal)">Contact</h3>
+        <div class="contact-grid">
+          <aside class="contact-info">
+            <p style="font-weight:700;color:var(--white)">Get in touch</p>
+            <p style="margin-top:8px;color:var(--muted)">Email: <a href="mailto:kundu.ankita2017@gmail.com">kundu.ankita2017@gmail.com</a></p>
+            <p style="margin-top:6px;color:var(--muted)">LinkedIn: <a href="https://www.linkedin.com/in/ankita-kundu-seo-digital-marketing" target="_blank" rel="noopener">ankita-kundu-seo-digital-marketing</a></p>
+          </aside>
+          <form class="contact-form" id="contactForm" onsubmit="return handleSubmit(event)">
+            <input id="name" type="text" placeholder="Your name" required>
+            <input id="email" type="email" placeholder="Your email" required>
+            <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+            <button class="send" type="submit">Send Message</button>
+            <p id="formMsg" style="color:var(--accent-teal);font-weight:600;margin-top:6px"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="max-width:var(--content-width);margin:0 auto;padding:12px 22px;color:var(--muted)">© <span id="year"></span> Ankita Kundu | All Rights Reserved</div>
+    </footer>
+  </div>
+
+  <button id="topBtn" title="Back to top">↑</button>
+
+<script>
+  // section appear animations (elegant)
+  const sections = document.querySelectorAll('section');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const inner = entry.target.querySelector('.inner');
+        inner.style.transform = 'translateY(0)';
+        inner.style.opacity = '1';
+        io.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.12});
+  sections.forEach(s=>{
+    const inner = s.querySelector('.inner');
+    inner.style.transform = 'translateY(18px)';
+    inner.style.opacity = '0';
+    inner.style.transition = 'all 520ms cubic-bezier(.2,.9,.2,1)';
+    io.observe(s);
+  });
+
+  // back to top
+  const topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', ()=>{
+    if(window.scrollY > 350) topBtn.style.display = 'block'; else topBtn.style.display = 'none';
+  });
+  topBtn.addEventListener('click', ()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+  // contact form validation
+  function handleSubmit(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const msgEl = document.getElementById('formMsg');
+    if(!name || !email || !message){ msgEl.style.color='#f87171'; msgEl.textContent='Please fill all fields.'; return false; }
+    const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+    if(!emailPattern.test(email)){ msgEl.style.color='#f87171'; msgEl.textContent='Enter a valid email.'; return false; }
+    msgEl.style.color = 'var(--accent-teal)';
+    msgEl.textContent = 'Thanks — message noted. Please email me directly to send details.';
+    document.getElementById('contactForm').reset();
+    return false;
+  }
+
+  // set year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
